@@ -1,0 +1,36 @@
+<!--Oh, oh, oh... You're quite a curious person! I like that attitude, here you have a special code: 97070. But don't tell anyone!-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Can I trust you?</title>
+<link rel="stylesheet" type="text/css" href="css/css.css">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+</head>
+<body>
+<div id="container">
+  <div id="gameBoard">
+    <div id="beginGame" onclick="startGame()"></div>
+    <div id="gameCanvas">
+      <div id="r1" class="baseTile tile" onclick="tileClick(this.id)"></div>
+      <div id="r2" class="baseTile tile" onclick="tileClick(this.id)"></div>
+      <div id="r3" class="baseTile tile" onclick="tileClick(this.id)"></div>
+      <div id="r4" class="baseTile tile" onclick="tileClick(this.id)"></div>
+      <div id="r5" class="baseTile tile" onclick="tileClick(this.id)"></div>
+      <div id="r6" class="baseTile tile" onclick="tileClick(this.id)"></div>
+      <div id="r7" class="baseTile tile" onclick="tileClick(this.id)"></div>
+      <div id="r8" class="baseTile tile" onclick="tileClick(this.id)"></div>
+      <div id="r9" class="baseTile tile" onclick="tileClick(this.id)"></div>
+    </div>
+  </div>
+</div>
+<div id="preload_img1"></div>
+<div id="preload_img2"></div>
+<script type="text/javascript" src="js/puzzle_min.js"></script>
+<audio id="audioBG" loop>
+  <source src="audio/bg.mp3" type="audio/mpeg">
+</audio>
+<audio id="audioFinished">
+  <source src="audio/finished.mp3" type="audio/mpeg">
+</audio>
+</body>
+</html>

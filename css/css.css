@@ -1,0 +1,133 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	background-color:#000000;
+}
+* {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+#container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	background: url(../img/BG.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+/* For any viewports less than 576px height */
+@media (max-height: 576px) {
+#container {
+	background-size: 1024px 576px;
+}
+}
+#gameBoard {
+	position: relative;
+	width: 400px;
+	height: 1100px;
+	background-image: url(../img/puzzle_box.png);
+	background-size: 400px 1100px;
+	background-position: center;
+	/*background-color: blue;*/
+}
+#beginGame {
+	position: relative;
+	top: calc(50% - 200px);
+	width: 400px;
+	height: 400px;
+	cursor: pointer;
+	/*background-color: red;*/
+}
+#gameCanvas {
+	position: relative;
+	top: calc(50% - 144px);
+	left: 56px;
+	width: 288px;
+	height: 288px;
+	/*background-color: red;*/
+}
+/* the base tile */
+.baseTile {
+	position: absolute;
+	width: 96px;
+	height: 96px;
+	cursor: pointer;
+	/*background-color: green;*/
+}
+/* the tile image to use */
+.tileImage {
+	background-image: url(../img/puzzle.png);
+}
+/* Retina image 50% size */
+.tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9 {
+	background-size: 288px 288px;
+}
+/* the individual tile backgrounds */
+.tile {
+	background-image: none;
+}
+.tile1 {
+	background-position: 0px 0px;
+}
+.tile2 {
+	background-position: -96px 0px;
+}
+.tile3 {
+	background-position: -192px 0px;
+}
+.tile4 {
+	background-position: 0px -96px;
+}
+.tile5 {
+	background-position: -96px -96px;
+}
+.tile6 {
+	background-position: -192px -96px;
+}
+.tile7 {
+	background-position: 0px -192px;
+}
+.tile8 {
+	background-position: -96px -192px;
+}
+.tile9 {
+	background-position: -192px -192px;
+}
+/* placement of the main game divs */
+#r1, #r2, #r3 {
+	top: 0px;
+}
+#r4, #r5, #r6 {
+	top: 96px;
+}
+#r7, #r8, #r9 {
+	top: 192px;
+}
+#r1, #r4, #r7 {
+	left: 0px;
+}
+#r2, #r5, #r8 {
+	left: 96px;
+}
+#r3, #r6, #r9 {
+	left: 192px;
+}
+#preload_img1, #preload_img2 {
+	position: absolute;
+	top:0;
+	left:0;
+	width: 1px;
+	height:1px;
+	display: none;
+}
+#preload_img1{
+	background: url(../img/puzzle_inside.png) no-repeat center center fixed;
+}
+#preload_img2{
+	background: url(../img/puzzle.png) no-repeat center center fixed;
+}
